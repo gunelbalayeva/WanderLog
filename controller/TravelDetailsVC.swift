@@ -9,21 +9,29 @@ import UIKit
 
 class TravelDetailsVC: UIViewController {
 
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var country: UILabel!
+    
+    @IBOutlet weak var city: UILabel!
+    
+    @IBOutlet weak var year: UILabel!
+    
+    var travelData:TravelData?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if let travelData = travelData {
+            if let imageData = travelData.image {
+                imageView.image = UIImage(data: imageData)
+            }
+            country.text = travelData.countryName
+            city.text = travelData.cityName
+            year.text = "\(travelData.year)" 
+        }
     }
-    
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

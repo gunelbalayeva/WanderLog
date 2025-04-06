@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6D88752D9FD05100BDCEC2 /* CoreDataManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D88742D9FD05100BDCEC2 /* CoreDataManagers.swift */; };
+		CE6D88812DA0129D00BDCEC2 /* TravelDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D88802DA0129D00BDCEC2 /* TravelDetailsVC.swift */; };
+		CEEED9A62DA2B542005336C4 /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEED9A52DA2B542005336C4 /* LogoViewController.swift */; };
 		CEF0B4002D9D35DF00F1B3BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0B3FF2D9D35DF00F1B3BA /* AppDelegate.swift */; };
 		CEF0B4022D9D35DF00F1B3BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0B4012D9D35DF00F1B3BA /* SceneDelegate.swift */; };
 		CEF0B4042D9D35DF00F1B3BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0B4032D9D35DF00F1B3BA /* ViewController.swift */; };
 		CEF0B4072D9D35DF00F1B3BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF0B4052D9D35DF00F1B3BA /* Main.storyboard */; };
 		CEF0B4092D9D35E100F1B3BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF0B4082D9D35E100F1B3BA /* Assets.xcassets */; };
 		CEF0B40C2D9D35E100F1B3BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF0B40A2D9D35E100F1B3BA /* LaunchScreen.storyboard */; };
+		CEF0B4152D9D367500F1B3BA /* TravelDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEF0B4132D9D367500F1B3BA /* TravelDataModel.xcdatamodeld */; };
+		CEF0B41A2D9D3B5D00F1B3BA /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0B4192D9D3B5D00F1B3BA /* DetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE6D88742D9FD05100BDCEC2 /* CoreDataManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagers.swift; sourceTree = "<group>"; };
+		CE6D88802DA0129D00BDCEC2 /* TravelDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDetailsVC.swift; sourceTree = "<group>"; };
+		CEEED9A52DA2B542005336C4 /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
 		CEF0B3FC2D9D35DF00F1B3BA /* WanderLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WanderLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF0B3FF2D9D35DF00F1B3BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEF0B4012D9D35DF00F1B3BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,8 @@
 		CEF0B4082D9D35E100F1B3BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEF0B40B2D9D35E100F1B3BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEF0B40D2D9D35E100F1B3BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF0B4142D9D367500F1B3BA /* TravelDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravelDataModel.xcdatamodel; sourceTree = "<group>"; };
+		CEF0B4192D9D3B5D00F1B3BA /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,9 +47,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE6D88732D9FD03200BDCEC2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CE6D88742D9FD05100BDCEC2 /* CoreDataManagers.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CEEED9A42DA2ABB6005336C4 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		CEEED9A72DA2B549005336C4 /* logo */ = {
+			isa = PBXGroup;
+			children = (
+				CEEED9A52DA2B542005336C4 /* LogoViewController.swift */,
+			);
+			path = logo;
+			sourceTree = "<group>";
+		};
 		CEF0B3F32D9D35DF00F1B3BA = {
 			isa = PBXGroup;
 			children = (
+				CEEED9A72DA2B549005336C4 /* logo */,
+				CEEED9A42DA2ABB6005336C4 /* Ext */,
+				CE6D88732D9FD03200BDCEC2 /* Managers */,
+				CEF0B4182D9D3AE800F1B3BA /* Model */,
+				CEF0B4172D9D3ACB00F1B3BA /* controller */,
+				CEF0B4162D9D3AC100F1B3BA /* app */,
 				CEF0B3FE2D9D35DF00F1B3BA /* WanderLog */,
 				CEF0B3FD2D9D35DF00F1B3BA /* Products */,
 			);
@@ -56,15 +95,39 @@
 		CEF0B3FE2D9D35DF00F1B3BA /* WanderLog */ = {
 			isa = PBXGroup;
 			children = (
-				CEF0B3FF2D9D35DF00F1B3BA /* AppDelegate.swift */,
-				CEF0B4012D9D35DF00F1B3BA /* SceneDelegate.swift */,
-				CEF0B4032D9D35DF00F1B3BA /* ViewController.swift */,
 				CEF0B4052D9D35DF00F1B3BA /* Main.storyboard */,
 				CEF0B4082D9D35E100F1B3BA /* Assets.xcassets */,
 				CEF0B40A2D9D35E100F1B3BA /* LaunchScreen.storyboard */,
 				CEF0B40D2D9D35E100F1B3BA /* Info.plist */,
 			);
 			path = WanderLog;
+			sourceTree = "<group>";
+		};
+		CEF0B4162D9D3AC100F1B3BA /* app */ = {
+			isa = PBXGroup;
+			children = (
+				CEF0B3FF2D9D35DF00F1B3BA /* AppDelegate.swift */,
+				CEF0B4012D9D35DF00F1B3BA /* SceneDelegate.swift */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		CEF0B4172D9D3ACB00F1B3BA /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEF0B4032D9D35DF00F1B3BA /* ViewController.swift */,
+				CEF0B4192D9D3B5D00F1B3BA /* DetailsVC.swift */,
+				CE6D88802DA0129D00BDCEC2 /* TravelDetailsVC.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		CEF0B4182D9D3AE800F1B3BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEF0B4132D9D367500F1B3BA /* TravelDataModel.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +202,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF0B4042D9D35DF00F1B3BA /* ViewController.swift in Sources */,
+				CE6D88752D9FD05100BDCEC2 /* CoreDataManagers.swift in Sources */,
+				CEF0B4152D9D367500F1B3BA /* TravelDataModel.xcdatamodeld in Sources */,
+				CEEED9A62DA2B542005336C4 /* LogoViewController.swift in Sources */,
 				CEF0B4002D9D35DF00F1B3BA /* AppDelegate.swift in Sources */,
+				CE6D88812DA0129D00BDCEC2 /* TravelDetailsVC.swift in Sources */,
 				CEF0B4022D9D35DF00F1B3BA /* SceneDelegate.swift in Sources */,
+				CEF0B41A2D9D3B5D00F1B3BA /* DetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +429,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CEF0B4132D9D367500F1B3BA /* TravelDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEF0B4142D9D367500F1B3BA /* TravelDataModel.xcdatamodel */,
+			);
+			currentVersion = CEF0B4142D9D367500F1B3BA /* TravelDataModel.xcdatamodel */;
+			path = TravelDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CEF0B3F42D9D35DF00F1B3BA /* Project object */;
 }
